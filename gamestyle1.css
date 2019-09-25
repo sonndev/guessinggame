@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+body{
+    font-size: 1.2em;
+    background: url('number.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+.h1Style{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background: #03c2fc;
+    border-radius: 100px;
+}
+#container{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background: #03c2fc;
+    opacity: 0.98;
+}
+
+/* panel containers*/
+.panel{
+    max-width: 80%; 
+    margin: 20px auto; /* 20px top and buttom and auto on left and right*/
+    border-radius: 10px;
+    padding: 10px;
+    background: whitesmoke;
+}
+
+button{
+    background: #013b6d;
+    height: 3em;
+    width: 80%;
+    margin-bottom: 1.5em;
+    border-radius: 10px; 
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+input{
+    border-radius: 10px;
+    width: 80%;
+    height: 4em;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.activeButton{
+    background: green;
+}

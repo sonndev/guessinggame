@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="gamestyle1.css">
+  <script src="game1.js"></script> 
+    <title>Guess the number games</title>
+</head>
+<body onload="init()"> <!-- en function der skal skabe et nyt nummer hver gang spillet loader-->
+    <div id="container">
+        <h1 class="h1Style">Guess the number game</h1>
+        <br>
+        <div class="panel">
+            <h2>I have a random number between 1-1000</h2>
+            <h3>Dare to guess?</h3>
+            <input type="text" id="playerName" autocomplete="off" placeholder="Enter your name">
+            <hr>
+            <p>Select difficulty</p>
+            <button id="easyBtn" onclick="easyMode()" class="">Default: 10 guesses</button>
+            <button id="newGameBtn"> NEW GAME</button> <!--Skabe en ny function gennem event handlers, der laver ny spil og random nummer-->
+        </div>
+
+        <div class="panel">
+            <h3 id="output">Enter you guess below &amp; press enter</h3>
+            <input type="number" id="inputGuess" autocomplete="off"> <!-- Event handler onchange every time value changes we're trigger a function-->
+            <p>Number of previous attempt: <span id="attempts"></span></p>
+        </div>
+
+        <div class="panel">
+            <p>Your previous guesses:</p>
+            <p id="guessLog"></p>
+        </div>
+
+        <div class="panel">
+            <tr>Highscores:</p>
+            <input id="saveScoreToBoard" type="button" value="Save score">
+            <table id="scoreBoard">
+                <td id="playerScore">
+                    
+                </td>
+                <th id="playerAttempts">
+                    </th>
+
+                    <th id=""><p id="showCookie">
+                        
+                    </p>
+                        </th>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
