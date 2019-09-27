@@ -58,3 +58,21 @@ input{
 .activeButton{
     background: green;
 }
+
+
+
+table { 
+    margin: 50px auto 0 auto;
+    background-color:#eee;
+    border-collapse:collapse; 
+}
+#scoreBoard th { 
+    background-color:#000;
+    color:white;
+    width:50%; 
+}
+#showScore td, #showScore th { 
+    padding:5px;
+    border:1px solid #000; 
+}
+
